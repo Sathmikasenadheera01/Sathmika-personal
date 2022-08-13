@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- title -->
+    <title>Sathmika - personal portfolio</title>
+  </head>
+  <body class="bg-slate-100 font-main px-12 md:px-24 lg:px-32 leading-normal">
+    <!-- navbar -->
+    <header class="py-6">
+      <nav class="flex justify-between items-center">
+        <h2 class="font-bold text-primary text-xl md:text-2xl">Sathmika.</h2>
+        <ul class="hidden md:flex space-x-8 cursor-pointer text-dark-primary font-medium">
+          <li>Home</li>
+          <li>Services</li>
+          <li>About Me</li>
+          <li>Skills</li>
+          <li>Contact</li>
+        </ul>
+        <!-- icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+        </svg>
+      </nav>
+    </header>
+
+
+    <!-- main section -->
+    <section class="flex flex-col gap-6 justify-center items-center h-96 text-center mt-16" data-aos="fade-up">
+        <h1 class="font-bold text-primary text-6xl leading-[4.5rem] md:leading-normal">Hey, I am Sathmika</h1>
+        <p class="text-dark-primary">I'm a frontend developer, graphic designer, <br> and a soon-to-be graduate majoring in Software Engineering. <br> I love making things and I code for a living.</p>
+        <button class="bg-primary text-secondary py-3 px-10 my-3">
+            Contact Me
+        </button>
+    </section>
+
+    <!-- services section -->
+    <div class="flex flex-col md:flex-row text-center md:text-left my-24 gap-20">
+        <div class="bg-white p-12" data-aos="fade-up">
+            <h1 class="font-bold text-primary text-4xl">Web Designer and Developer</h1>
+            <p class="my-8 text-dark-primary">I develop amazing web sites and making 
+                them responsive so everyone can use 
+                them. You'll probably be tired of hearing 
+                this but I'm also a freelancer that has 
+                been working with HTML, CSS3 and Java 
+                Script. 
+                
+                Tired of paying developers to build you a 
+                responsive website? Let me help! I am 
+                looking forward on working with you to 
+                build your next website that is going to 
+                be an exciting project for you as well.</p>
+            <button class="bg-transparent border-primary border-solid border py-3 px-10 text-primary">
+                see projects
+            </button>
+        </div> 
+        
+        <div class="bg-white p-12" data-aos="fade-up">
+            <h1 class="font-bold text-primary text-4xl">Awesome Graphic Designer</h1>
+            <p class="my-8 text-dark-primary">I've been designing logos for over two 
+                years. I don't care about boring stuff, I 
+                only care about your dreams. My mission 
+                is to help awesome people bring their 
+                dreams to life. I am a graphic designer 
+                who develops amazing logo designs and 
+                other stuff.
+                
+                I've worked with many different clients 
+                ranging from small businesses to large 
+                companies and they have all been very 
+                happy with my work</p>
+            <button class="bg-transparent border-primary border-solid border py-3 px-10 text-primary">
+                see projects
+            </button>
+        </div>
+        
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+  </body>
+</html>
