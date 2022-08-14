@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +49,7 @@
 
     <!-- main section -->
     <section
-      class="flex flex-col gap-6 justify-center items-center h-96 text-center mt-16 px-12 md:px-24 lg:px-32"
+      class="flex flex-col gap-6 justify-center h-screen items-center text-center px-12 -mt-16 md:px-24 lg:px-32"
       data-aos="fade-up"
     >
       <h1
@@ -62,14 +62,14 @@
         and a soon-to-be graduate majoring in Software Engineering. <br />
         I love making things and I code for a living.
       </p>
-      <button class="bg-primary text-secondary py-3 px-10 my-3">
-        Contact Me
+      <button class="bg-primary text-secondary py-3 px-10 my-3 hover:scale-110 duration-200">
+        <a href="#contact">Contact me</a>
       </button>
     </section>
 
     <!-- services section -->
     <div
-      class="flex flex-col md:flex-row text-center md:text-left my-24 gap-20 px-12 md:px-24 lg:px-32"
+      class="flex flex-col lg:flex-row text-center lg:text-left my-24 gap-20 px-12 md:px-24 lg:px-32"
     >
       <div class="bg-white p-12" data-aos="fade-up">
         <h1 class="font-bold text-primary text-4xl">
@@ -84,7 +84,7 @@
           website that is going to be an exciting project for you as well.
         </p>
         <button
-          class="bg-transparent border-primary border-solid border py-3 px-10 text-primary"
+          class="bg-transparent border-primary border-solid border py-3 px-10 text-primary hover:scale-110 duration-200"
         >
           see projects
         </button>
@@ -103,7 +103,7 @@
           they have all been very happy with my work
         </p>
         <button
-          class="bg-transparent border-primary border-solid border py-3 px-10 text-primary"
+          class="bg-transparent border-primary border-solid border py-3 px-10 text-primary hover:scale-110 duration-200"
         >
           see projects
         </button>
@@ -111,11 +111,11 @@
     </div>
 
     <!-- about me -->
-    <div class="flex flex-col md:flex-row items-center justify-between px-12 md:px-24 lg:px-32 py-12 bg-primary text-center md:text-left">
-      <div class="md:w-1/2">
+    <div class="flex flex-col lg:flex-row items-center justify-between px-12 lg:px-24 py-12 lg:py-16 bg-primary text-center lg:text-left">
+      <div class="lg:w-1/2">
         <h1 class="text-secondary text-5xl md:text-6xl font-bold" data-aos="fade-up">Get to know <br> Me !</h1>
         <p class="text-white my-12 font-normal" data-aos="fade-up">
-          My name is Sathmika and Currently I am a undergraduate student who is
+          My name is Sathmika and Currently I am an undergraduate student who is
           studying software engineering with a passion for graphic design and
           web development. <br> I am building awesome web sites, creating awesome
           graphics designs for people who care about the details just as much as
@@ -125,16 +125,16 @@
           experience.
         </p>
         <button class="bg-secondary text-primary py-3 px-10 my-3 font-semibold" data-aos="fade-up">
-            contact me
+            <a href="#contact">Contact me</a>
         </button>
       </div>
-      <div class="md:w-1/2 hidden md:block">
-        <img src="image.png" alt="" class="w-3/4 float-right">
+      <div class="lg:w-1/2 hidden lg:block">
+        <img src="propic-01.png" alt="" class="w-3/4 float-right">
       </div>
     </div>
 
     <!-- skills -->
-    <div class="px-12 md:px-24 lg:px-32 py-12">
+    <div class="px-12 md:px-24 lg:px-32 py-12 lg:py-24">
         <h1 class="text-primary text-5xl md:text-6xl font-bold text-center" data-aos="fade-up">My Skills</h1>
         <div class="flex flex-col md:flex-row md:gap-16 " data-aos="fade-up">
 
@@ -177,7 +177,7 @@
                     <div class="w-2/3 absolute bg-primary h-4 z-10"></div>
                 </div>
 
-                <p class="mt-6">Graphi Design</p>
+                <p class="mt-6">Graphic Design</p>
                 <div class="bg-slate-300 h-4 relative -z-10 w-full">
                     <div class="w-11/12 absolute bg-primary h-4 z-10"></div>
                 </div>
@@ -187,12 +187,34 @@
         
     </div>
 
+    <!-- contact form -->
+    <div class="px-12 md:px-24 lg:px-32 py-12 lg:py-24 text-center" id="contact">
+      <h1 class="text-primary font-bold text-5xl mb-2" data-aos="fade-up">Send Me a Message</h1>
+      <p class="text-slate-500 font-medium text-base mb-8" data-aos="fade-up">Let me worry about your We site or Logo design</p>
+
+      <div class="md:px-8 lg:px-32" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row md:gap-12 gap-6 justify-center items-center">
+          <input type="text" class="w-full md:basis-1/2 h-12 bg-slate-300 pl-4 outline-none" placeholder="Enter your Name" id="name">
+          <input type="text" class="w-full md:basis-1/2 h-12 bg-slate-300 pl-4 outline-none" placeholder="Enter your phone Number" id="phone">
+        </div>
+        <input type="text" class="w-full md:basis-1/2 h-12 bg-slate-300 pl-4 mt-6 outline-none" placeholder="Enter your Email" id="email">
+        <textarea name="" id="" cols="30" rows="10" class="w-full md:basis-1/2 bg-slate-300 pl-4 mt-6 resize-none outline-none pt-2" placeholder="Message" id="message"></textarea>
+      </div>
+      <button class="text-secondary bg-primary py-3 px-10 my-3 font-medium mx-auto mt-6" data-aos="fade-up" onclick="sendMessage();">
+        Send Message
+      </button>
+    </div>
+
+    
+
     <footer class="text-center bg-dark-primary text-white">
         <p>
             sathmika @ 2022
         </p>
     </footer>
 
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
